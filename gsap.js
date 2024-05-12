@@ -9,8 +9,8 @@ gsap.to(".box" ,{
     // skewY:10
     // skewY:10
     scale:1.5,
-    repeat:-1,
-    yoyo:true
+    repeat:-1,//repeat the iteration
+    yoyo:true//go and back
     
 })
 
