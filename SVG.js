@@ -1,10 +1,10 @@
-var path = "M 10 100 Q 500 100 990 100";
+var path = "M 10 200 Q 1500 200 2990 200";
+var finalPath = "M 10 200 Q 1500 200 2990 200";
 
-var finalPath = "M 10 100 Q 500 100 990 100";
+
 var string = document.querySelector("#string");
-
 string.addEventListener("mousemove", function (dets) {
-  path = `M 10 100 Q ${dets.x} ${dets.y} 990 100`;
+  path = `M 10 200 Q ${dets.x} ${dets.y} 2990 200`;
 
   gsap.to("svg path", {
     attr: { d: path },
