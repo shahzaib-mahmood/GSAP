@@ -1,6 +1,7 @@
 // gsap.to(".box" ,{
-//     x:1000,
-//     y:200,
+//     x:1200,
+//     y:150,
+//    //  opacity:0,
 //     duration:2,
 //     delay:1,
 //     backgroundColor:"blue",
@@ -9,9 +10,10 @@
 //     // skewY:10
 //     // skewY:10
 //     scale:1.5,
-//     repeat:-1,//repeat the iteration
-//     yoyo:true//go and back   
+//    //  repeat:-1,//repeat the iteration
+//    //  yoyo:true//go and back   
 // })
+
 
 // gsap.from(".box2", {
 //     x:900,
@@ -32,6 +34,17 @@
 
 // timeline
 var tl= gsap.timeline()
+tl.to(".box", {
+   x:1200,
+   y:150,
+   // opacity:0,
+   duration:1,
+   delay:1,
+   backgroundColor:"blue",
+   borderRadius:"50%",
+   rotate:360,
+   scale:1.5,
+})
 tl.from("h2",{
     y:-20,
     duration:1,

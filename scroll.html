@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrolling trigger</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body,
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body{
+        overflow-x: hidden;
+      }
+      .page1 {
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .page2 {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(27, 173, 83);
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        padding: 5vw 0;
+        /* flex-direction: column; */
+      }
+      .page3 {
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: pink;
+      }
+      /* h1 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      } */
+      .page2 h1 {
+        font-weight:100;
+        font-size: 30vw;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page1">
+      <!-- <div class="box"></div> -->
+    </div>
+
+    <div class="page2">
+      <h1>Experience</h1>
+      <!-- <div class="box"></div> -->
+      <!-- <h1>SHAHZAIB CHEEMA</h1>
+      <h2>startup of GSAP code</h2> -->
+    </div>
+
+    <div class="page3">
+      <!-- <div class="box"></div> -->
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="scroll.js"></script>
+  </body>
+</html>
