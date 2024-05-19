@@ -87,7 +87,7 @@
         color: white;
       }
       h1 {
-        color: rgb(255, 221, 0);
+        /* color: rgb(255, 221, 0); */
         font-size: 300px;
         font-weight: bold;
         font-family: monospace;
@@ -95,18 +95,49 @@
         position: absolute;
         top: 50%;
         left: 10%;
-    }
-    .arrow i{
-          color: rgb(254, 84, 6);
-          font-size: 300px;
-          font-weight: bold;
-          font-family: monospace;
-          text-transform: uppercase;
-          position: absolute;
-          top: 42%;
-          left: 62%;
+        background-image: url(https://images.pexels.com/photos/8482798/pexels-photo-8482798.jpeg?auto=compress&cs=tinysrgb&w=600);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 4px white;
+        /* -webkit-text-stroke-color: blue; */
+        color: transparent;
+      }
+      .arrow i {
+        color: rgb(254, 84, 6);
+        font-size: 300px;
+        font-weight: bold;
+        font-family: monospace;
+        text-transform: uppercase;
+        position: absolute;
+        top: 42%;
+        left: 62%;
+      }
+      .page2 {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right bottom, yellow, blue, black);
+      }
 
+      body::-webkit-scrollbar {
+        background-color: transparent;
+        width: 45px; /* Adjust the width of the vertical scrollbar */
+      }
+      body::-webkit-scrollbar-thumb {
+        background: linear-gradient(red, blue, green);
+        border-radius: 20px;
+      }
+      body::-webkit-scrollbar-thumb:active {
+        background: linear-gradient(
+          green,
+          red,
+          blue
+        ); /* Different gradient when active */
+      }
 
+      body::-webkit-scrollbar-track {
+        background: #4b4747; /* Color of the track */
+        border-radius: 10px; /* Round the corners of the track */
+        box-shadow: outset 0 0 6px rgba(0, 0, 0, 0.3); /* Add shadow inside the track */
       }
     </style>
   </head>
@@ -127,11 +158,12 @@
         </ul>
         <i class="ri-close-line"></i>
       </div>
-<div class="arrow">
-    <i class="ri-arrow-right-up-line"></i>
-    <h1>please open sidebar</h1>
-</div>
+      <div class="arrow">
+        <i class="ri-arrow-right-up-line"></i>
+        <h1>please open sidebar</h1>
+      </div>
     </div>
+    <div class="page2"></div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"

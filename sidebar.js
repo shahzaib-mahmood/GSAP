@@ -57,3 +57,4 @@ close.addEventListener("click", ()=>{
     tl.reverse();
     // console.log("neknkln")
 })
+
