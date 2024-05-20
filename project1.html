@@ -29,6 +29,7 @@
         height: 70%;
         height: calc(100vh - 70px); /* Adjust height based on header height */
         /* overflow-y: auto; Enable vertical scrolling */
+        
        
       }
       .gameheader{
@@ -49,26 +50,31 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 3px 2px;
+        
     }
     .goolaparent{
         display: flex;
         font-display: row;
         flex-wrap: wrap;
+       
+        
     }
+  
     </style>
   </head>
   <body>
     <div class="page">
 <div class="gamecontainer">
     <div class="gameheader">
-        <h1>IN 12</h1>
-        <h1>OUT 17</h1>
-        <h1>Result Pass</h1>
+        <h1>Hit <span id="hit" style="background-color: #fff; padding: 15px;">5</span></h1>
+        <h1>Timer <span  id="counter" style="background-color: #fff; padding: 15px;">60</span></h1>
+        <h1>Score <span id="scoree" style="background-color: #fff; padding: 15px;">0</span></h1>
     </div>
 
 
     <div class="goolaparent">
-        <!-- <h2 class="goola">1</h2> -->
+
     </div>
         
     
