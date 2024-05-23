@@ -6,6 +6,8 @@ function bubblescreate() {
     var generatenumber = Math.floor(Math.random() * 10);
     displayy += `<h2 class="goola">${generatenumber}</h2>`;
   }
+
+  
   var goolaParentElement = document.querySelector(".goolaparent");
   if (goolaParentElement) {
     // Set the innerHTML of the selected element to the displayy string
@@ -21,7 +23,7 @@ function hitrn() {
 }
 
 
-var timecounter = 3;
+var timecounter = 60;
 function timerfuntion() {
   var intitialcounter = setInterval(() => {
     if (timecounter >1) {
