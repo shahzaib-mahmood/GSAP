@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      /* body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+    :root {
+        --cl: #222327;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 150px;
+        justify-content: space-between;
+        margin-top: 20px;
+        background-color: #222327;
+      }
+      h1{
+        color: white;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--cl);
+        height: 70px;
+        width: 700px;
+        position: relative;
+        border-radius: 10px;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background: white;
+        list-style: none;
+        height: 60px;
+        width: 500px;
+        position: relative;
+        border-radius: 10px;
+      }
+      li a {
+        text-decoration: none;
+      }
+
+      li {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        z-index: 1;
+      }
+      .container ul li a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+      }
+      .container ul li a .icons {
+        position: relative;
+        display: block;
+        line-height: 75px;
+        font-size: 1.5em;
+        text-align: center;
+        color: var(--cl);
+        transition: 0.5s;
+      }
+      .container ul li.active a .icons {
+        transform: translateY(-32px);
+      }
+      .container ul li a .text {
+        position: absolute;
+        font-size: 0.85em;
+        font-weight: 400px;
+        color: var(--cl);
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      .container ul li.active a .text {
+        opacity: 1;
+        transform: translateY(10px);
+      }
+      .indicator {
+        position: absolute;
+        top: -65%;
+        left: 5px; 
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background: #29fd53;
+        border: 6px solid var(--cl);
+        transition: 0.5s;
+      }
+      .indicator::before {
+        content: "";
+        position: absolute;
+        top: 57%;
+        left: -20px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-top-right-radius: 28px;
+        box-shadow: 0px -10px 0 0 var(--cl);
+      }
+      .indicator::after {
+        content: "";
+        position: absolute;
+        top: 57%;
+        right: -20px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-top-left-radius: 28px;
+        box-shadow: 0px -10px 0 0 var(--cl);
+      }
+      i{
+        /* color: white; */
+      }
+      .container ul li:nth-child(1).active ~ .indicator {
+        transform: translateX(calc(70px * 0));
+      }
+      .container ul li:nth-child(2).active ~ .indicator {
+        transform: translateX(calc(70px * 1));
+      }
+      .container ul li:nth-child(3).active ~ .indicator {
+        transform: translateX(calc(70px * 2));
+      }
+      .container ul li:nth-child(4).active ~ .indicator {
+        transform: translateX(calc(70px * 3));
+      }
+      .container ul li:nth-child(5).active ~ .indicator {
+        transform: translateX(calc(70px * 4));
+      }
+      .container ul li:nth-child(6).active ~ .indicator {
+        transform: translateX(calc(70px * 5));
+      }
+      .container ul li:nth-child(7).active ~ .indicator {
+        transform: translateX(calc(70px * 6));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+          <h1>LOGO</h1>
+    <div class="container">
+      <ul class="ulcont">
+        <li class="listitems active">
+          <a href="">
+            <span class="icons"><i class="ri-lightbulb-flash-line"></i></span>
+            <span class="text">Skills</span>
+          </a>
+        </li>
+
+        <li class="listitems">
+          <a href="">
+            <span class="icons"><i class="ri-user-follow-fill"></i></span>
+            <span class="text">About</span>
+          </a>
+        </li>
+
+        <li class="listitems">
+          <a href="">
+            <span class="icons"><i class="ri-service-line"></i></span>
+            <span class="text">Service</span>
+          </a>
+        </li>
+        <li class="listitems">
+          <a href="">
+            <span class="icons"><i class="ri-home-heart-line"></i></span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+
+        <li class="listitems">
+          <a href="">
+            <span class="icons"><i class="ri-briefcase-4-line"></i></span>
+            <span class="text">Porfolio</span>
+          </a>
+        </li>
+
+        <li class="listitems">
+          <a
+            href="https://www.youtuibe.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="icons"><i class="ri-news-line"></i></span>
+            <span class="text">Blog</span>
+          </a>
+        </li>
+
+        <li class="listitems">
+          <a
+            href="https://www.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="icons"><i class="ri-contacts-book-line"></i></span>
+            <span class="text">Contact</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+
+    </ul>
+    </div>
+    </div>
+
+    <script>
+      const listitems = document.querySelectorAll(".listitems");
+      function activelink(event) {
+        event.preventDefault();
+        listitems.forEach((items) => items.classList.remove("active"));
+        this.classList.add("active");
+
+        // const link = this.querySelector("a").href;
+        // window.open(link, "_blank"); // Opens the link in a new tab
+      }
+      listitems.forEach((items) => items.addEventListener("click", activelink));
+    </script>
+  </body>
+</html>

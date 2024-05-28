@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drag&drop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        background: skyblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .left,
+      .right {
+        width: 500px;
+        height: 900px;
+        background-color: rgb(27, 25, 25);
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-around;
+        border: 3px dashed rgb(255, 255, 255);
+      }
+      .listitems {
+        width: 300px;
+        height: 100px;
+        background-color: rgb(240, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        justify-content: space-around;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="listitems" draggable="true"><i class="ri-drag-move-2-fill"></i>item-1</div>
+        <div class="listitems" draggable="true"><i class="ri-drag-move-2-fill"></i>item-4</div>
+        <div class="listitems" draggable="true"><i class="ri-drag-move-2-fill"></i>item-5</div>
+        <div class="listitems" draggable="true"><i class="ri-drag-move-2-fill"></i>item-2</div>
+        <div class="listitems" draggable="true"><i class="ri-drag-move-2-fill"></i>item-3</div>
+      </div>
+      <div class="right"></div>
+    </div>
+
+    <script src="draganddrop.js"></script>
+  </body>
+</html>
